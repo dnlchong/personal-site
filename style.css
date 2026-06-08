@@ -318,7 +318,7 @@ a:hover {
 /* ─── Mobile ─────────────────────────────────────────── */
 @media (max-width: 680px) {
 
-  body { overflow-x: hidden; }
+  html, body { overflow-x: clip; }
 
   .mobile-contact { display: block; }
 
@@ -350,10 +350,13 @@ a:hover {
 
   .layout {
     padding-top: 57px;
+    width: 100%;
   }
 
   .main {
     padding: 28px 20px;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .section { margin-bottom: 40px; }
@@ -363,4 +366,6 @@ a:hover {
   .proj-tags { flex-wrap: wrap; }
 
   .exp-desc { max-width: 100%; }
+
+  .contact-list a { overflow-wrap: break-word; word-break: break-all; }
 }
