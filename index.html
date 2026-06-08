@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Chong</title>
+  <meta name="description" content="Daniel Chong personal website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Mobile top bar -->
+<header class="mobile-header">
+  <span class="mobile-header-name">Daniel Chong<span class="cursor"></span></span>
+  <span class="mobile-header-role">Software engineer, Math & CS @ Duke</span>
+</header>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-name">Daniel Chong<span class="cursor"></span></div>
+    <div class="sidebar-role">Software engineer<br/>Math & CS @ Duke</div>
+
+    <div class="nav-label">nav</div>
+    <nav class="nav">
+      <a href="#about" class="active">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#showcase">Showcase</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <!-- ↓ Replace with your real links -->
+      <a href="https://github.com/dnlchong" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/dnlchong" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:dnlchong@gmail.com">Email</a>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section-head">About</h2>
+      <p class="about-text">
+        <!-- ↓ Replace with your real about text -->
+        Daniel Chong is a software engineer based in Las Vegas.
+        He is currently studying at Duke University. <br/>
+        Previously, he took a leave from Duke to co-found Harpie,
+        a startup that raised $5M. <br/><br/>
+        He enjoys working with code but especially enjoys
+        working with people. In his free time, he coaches 
+        professional TEKKEN and spends time with his cat.<br/><br/>
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <h2 class="section-head">Experience</h2>
+      <ul class="exp-list">
+
+        <li class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-years">Late 2025</span>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Engineering Team Lead</div>
+            <div class="exp-company">Lexsy</div>
+            <div class="exp-desc">
+              Built a RAG pipeline to analyze startups' 
+              legal documents and identify potential issues. Also coordinated
+              communication between devs and the executive team.
+            </div>
+            <div class="proj-tags">
+              <span class="proj-tag">pinecone</span>
+              <span class="proj-tag">typescript</span>
+              <span class="proj-tag">langchain</span>
+            </div>
+          </div>
+        </li>
+        <li class="exp-item">
+          <div class="exp-meta">
+            <span class="exp-years">2021 – 2025</span>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Co-Founder</div>
+            <div class="exp-company">Harpie</div>
+            <div class="exp-desc">
+              Raised $5M from Coinbase and Dragonfly to help protect people 
+              from digital asset hacks and scams. Protected $100M+ in digital 
+              assets. Grew to 22K weekly active users before winding down in 2025.
+            </div>
+            <div class="proj-tags">
+              <span class="proj-tag">solidity</span>
+              <span class="proj-tag">pytorch</span>
+              <span class="proj-tag">golang</span>
+              <span class="proj-tag">next.js</span>
+              <span class="proj-tag">graphql</span>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="showcase">
+      <h2 class="section-head">Showcase</h2>
+      <ul class="proj-list">
+
+        <!-- ↓ Duplicate this block for each project -->
+         <li class="proj-item">
+          <div class="proj-body">
+            <div class="proj-name">
+              <a href="https://etherscan.io/address/0x9cde019f455b9a3c33d95912edceabbe0cad3444">
+                rescue-contract
+              </a>
+            </div>
+            <div class="proj-desc">
+              Live-deployed Solidity contract that helped recover over $2M from compromised wallets 
+              by intercepting malicious transactions in transit. The contract processed 7,000+ transactions.
+            </div>
+            <div class="proj-tags">
+              <span class="proj-tag">solidity</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj-item">
+          <div class="proj-body">
+            <div class="proj-name">
+              <!-- Use <a href="..."> if the project has a link, plain text if not -->
+              <a href="https://drive.google.com/file/d/1hgrFDmUOR3QDhJT_4LtabjmgxZpBd54W/view">
+                consul-ai
+              </a>
+            </div>
+            <div class="proj-desc">
+              Designed a Claude-powered agent that automates shareholder resolution voting
+              for family offices; reduced director background research time by 90% (5m to 30s) 
+              by replacing freeform web browsing with explicitly defined web actions.
+            </div>
+            <div class="proj-tags">
+              <span class="proj-tag">claude code</span>
+              <span class="proj-tag">tinyfish</span>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- Contact (mobile only) -->
+    <section class="section mobile-contact" id="contact">
+      <h2 class="section-head">Contact</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/dnlchong" target="_blank" rel="noopener">github.com/dnlchong</a>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/dnlchong" target="_blank" rel="noopener">linkedin.com/in/dnlchong</a>
+        </li>
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:dnlchong@gmail.com">dnlchong@gmail.com</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  const sections    = document.querySelectorAll('section[id]');
+  const desktopLinks = document.querySelectorAll('.nav a');
+  const mobileLinks  = document.querySelectorAll('.mobile-nav a');
+
+  const setActive = (id) => {
+    [...desktopLinks, ...mobileLinks].forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+    });
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) setActive(entry.target.id);
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
