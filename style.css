@@ -190,6 +190,7 @@ a:hover {
   color: var(--muted);
   white-space: nowrap;
 }
+.exp-years-mobile { display: none; }
 .exp-body {
   display: flex;
   flex-direction: column;
@@ -367,11 +368,13 @@ a:hover {
 
   .exp-desc { max-width: 100%; }
 
+  .exp-meta { display: none; }
+  .exp-years-mobile { display: block; }
+
   .exp-item {
     flex-direction: column;
     gap: 4px;
   }
-  .exp-meta { min-width: unset; }
 
   .proj-item {
     flex-direction: column;
