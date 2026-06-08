@@ -367,5 +367,16 @@ a:hover {
 
   .exp-desc { max-width: 100%; }
 
+  .exp-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .exp-meta { min-width: unset; }
+
+  .proj-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
   .contact-list a { overflow-wrap: break-word; word-break: break-all; }
 }
